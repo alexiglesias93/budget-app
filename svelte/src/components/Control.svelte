@@ -17,6 +17,7 @@
       return acc - curr.value;
     }
   }, 0);
+  $: negative = Math.sign(balance) === -1 ? true : false;
   //console.log(balance);
 
   // Functions
@@ -25,8 +26,8 @@
 
 <div class="control">
   <div class="control_status">
-    <h2>Balance</h2>
-    <div class="balance">{balance}€</div>
+    <h2 class="status_title">Balance:</h2>
+    <div class="status_balance" class:negative>{balance}€</div>
   </div>
   <div class="control_add" on:click={() => dispatch('add')}>
     <div class="add_icon w-embed">
@@ -42,6 +43,6 @@
           176 416 176Z" />
       </svg>
     </div>
-    <div>Add new</div>
+    <div class="add_text">Add new</div>
   </div>
 </div>

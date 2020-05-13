@@ -15,18 +15,20 @@
 </script>
 
 <div class="transaction">
-  <div class="transaction_info">
+  <div class="transaction_content">
     {#if type === 'income'}
       <IncomeBadge {category} />
     {:else}
       <ExpenseBadge {category} />
     {/if}
-    <div>
+    <div class="transaction_info">
       <h4 class="transaction_concept">{concept}</h4>
       <p class="transaction_date">{date}</p>
     </div>
+    <div class="transaction_value">
+      {type === 'expenses' ? '-' : ''}{value}€
+    </div>
   </div>
-  <div class="transaction_value">{type === 'expenses' ? '-' : ''}{value}€</div>
   <div class="transaction_controls">
     <div
       class="transaction_control edit w-embed"

@@ -82,14 +82,15 @@
     in:scale={{ delay: 250 }}
     out:scale={{ duration: 250 }}>
     <div class="form_head">
-      <h3 class="mb-0">{editModePrint} {typePrint}</h3>
+      <h3 class="transactions_title">{editModePrint} {typePrint}</h3>
       <div
-        class="form_switch {inputs.type === 'expenses' ? 'active' : ''}"
+        class="form_switch"
+        class:active={inputs.type === 'expenses'}
         on:click={toggleType}>
-        <div
-          class="switch_circle {inputs.type === 'expenses' ? 'active' : ''}" />
+        <div class="switch_circle" class:active={inputs.type === 'expenses'} />
       </div>
     </div>
+    <div class="form_divider" class:expenses={inputs.type === 'expenses'} />
     <form
       id="modal-form"
       name="Modal Form"
@@ -155,5 +156,6 @@
   <div
     class="modal_overlay"
     in:fade={{ duration: 250 }}
-    out:fade={{ delay: 250 }} />
+    out:fade={{ delay: 250 }}
+    on:click={() => dispatch('close')} />
 </div>

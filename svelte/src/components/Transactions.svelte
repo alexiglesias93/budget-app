@@ -26,7 +26,7 @@
 
 <div class="transactions">
   <div class="transactions_head">
-    <h3 class="mb-0">Income &amp; Expenses</h3>
+    <h3 class="transactions_title">Income &amp; Expenses</h3>
     <div class="transactions_count">
       <strong>Transactions:</strong>
       {filteredTransactions.length}

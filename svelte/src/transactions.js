@@ -14,8 +14,24 @@ const defaults = [
     concept: "Sold Car",
     type: "income",
     category: "Sale",
-    date: "05 May 2020",
+    date: "05 April 2020",
     value: 2500,
+  },
+  {
+    id: "d72ducd2-7d38-4d3a-a5d4-244c2d1c6be2",
+    concept: "Salary",
+    type: "income",
+    category: "Salary",
+    date: "18 March 2020",
+    value: 1843.99,
+  },
+  {
+    id: "c98dhcd2-7d3b-4d3a-a5d4-244cag4c6bd2",
+    concept: "Travel to Japan",
+    type: "expenses",
+    category: "Leisure",
+    date: "23 January 2020",
+    value: 3273.76,
   },
 ];
 
