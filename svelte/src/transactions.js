@@ -27,7 +27,7 @@ const defaults = [
   },
   {
     id: "c98dhcd2-7d3b-4d3a-a5d4-244cag4c6bd2",
-    concept: "Travel to Japan",
+    concept: "Japan Travel",
     type: "expenses",
     category: "Leisure",
     date: "23 January 2020",

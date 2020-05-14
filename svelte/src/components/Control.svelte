@@ -27,7 +27,7 @@
 <div class="control">
   <div class="control_status">
     <h2 class="status_title">Balance:</h2>
-    <div class="status_balance" class:negative>{balance}€</div>
+    <div class="status_balance" class:negative>{balance.toFixed(2)}€</div>
   </div>
   <div class="control_add" on:click={() => dispatch('add')}>
     <div class="add_icon w-embed">

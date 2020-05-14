@@ -26,7 +26,7 @@
       <p class="transaction_date">{date}</p>
     </div>
     <div class="transaction_value">
-      {type === 'expenses' ? '-' : ''}{value}€
+      {type === 'expenses' ? '-' : ''}{value.toFixed(2)}€
     </div>
   </div>
   <div class="transaction_controls">
